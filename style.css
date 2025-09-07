@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Manrope,Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+}
+img{
+    background-color: #1f1f1f;
+    height: 38px;
+    width: 38px;
+}
+.navbar{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 9999; /* isse sidebar2 scroll krne par nv ke upr nhi chdega aur ensure krega ki always navbar top pe ho*/
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    height: 58px;
+}
+.subnav1{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    height: 58px;
+    width: 810px;
+}
+.home{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+}
+.home i{
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 25px;
+}
+.search-spotify{
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-left: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #b3b3b3;
+    background-color: #1f1f1f;
+    height: 48px;
+    width:470px;
+}
+.search-spotify i{
+    padding-left: 15px;
+    background-color: #1f1f1f;
+    font-size: 22px;
+}
+.search-spotify input{
+    height: 48px;
+    width:470px;
+}
+.search-spotify img{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+    border-left: 1px solid white;
+    box-sizing: border-box;
+    padding: 4px;
+    background-color: #1f1f1f;
+    height: 33px;
+}
+.subnav2{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    height: 58px;
+    width: 580px;
+}
+.subparts{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    color:#b3b3b3;
+    background-color: black;
+}
+.subparts:hover,
+.login:hover,
+.install:hover,
+.home:hover {
+  transform: scale(1.08);
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+.nav-divider{
+    height: 26px;
+    width: 1px;
+    background-color: white;
+}
+.install{
+    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 48px;
+    width: 100px;
+    border-radius: 25px;
+}
+.login a{
+    text-decoration: none;
+    color:black;
+    background-color: white;
+}
+.sidebar1{
+    position: fixed;
+    top: 58px;
+    left: 0;
+    border: 1px solid #1f1f1f;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: #121212;
+    width: 350px;
+    height: 510px;
+}
+.outerlib{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 71px;
+}
+.innerlib{
+    background-color: #121212;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.innerlib p,i{
+    background-color:#121212;
+}
+.scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #121212;
+    width: 350px;
+    height: 250px;
+}
+.scroll::-webkit-scrollbar {
+  display: none;    /*isse scroll bar hide hojaaega*/
+}
+.playlist{
+    padding: 10px 10px;
+    margin: 8px 10px;
+    color: white;
+    height: 120px;
+    width: 310px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+}
+.cont{
+    margin:16px;
+}
+.cont h4,h5,.button{
+    background-color: #1f1f1f;
+}
+.cont h5{
+    padding-top: 3px;
+}
+.button{
+    cursor: pointer;
+    display: flex;
+    padding-bottom: 14px;
+    justify-content:center;
+    align-items: center;
+    font-size: 13px;
+    margin-left: 18px;
+    font-weight: 800;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    height: 5px;
+    width: 120px;
+    padding-top:18px;
+}
+.podcasts{
+    padding: 10px 10px;
+    margin: 8px 10px;
+    color: white;
+    background-color: #1f1f1f;
+    width: 310px;
+    height: 120px;
+    border-radius: 8px;
+}
+.cookies{
+    background-color: #121212;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+}
+.row1{
+    cursor: pointer;
+    background-color: #121212;
+    margin-left: -50px;
+}
+.cont2{
+
+    font-size: 11px;
+    color:#b3b3b3;
+    background-color: #121212;
+    height: 80px;
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cont3{
+    font-size: 11px;
+    color: #b3b3b3;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.row2{
+    cursor: pointer;
+    margin-left: -102px;
+    margin-top: -20px;
+    background-color: #121212;
+}
+.cook{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 23px;
+    background-color: #121212;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.globe{
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 14px;
+    height: 30px;
+    width: 95px;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hero{
+    background-color: black;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.sidebar2{
+    background-color: #121212;
+    margin-left: 370px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 1000px;
+    width: 1110px;
+}
+.header{
+    height: 48px;
+    width: 1080px;
+    margin-left: -10px;
+    margin-top: 20px;
+    color: white;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h2,.showall{
+    background-color: #121212;
+}
+.display{
+    border-radius: 10px;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.subhero1{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 293px;
+    width:100%;
+    background-color: #121212;
+}
+.play{
+    transform: translate(-50%,-40%);
+    opacity: 0;              /*ye chatgpt se poocha h taaki play button mein hover effect aaske*/
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #1fdf64;
+}
+.card:hover .play{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+.play i{
+    color: black;
+    background-color: #1fdf64;
+}
+.card{
+    position: relative;
+    margin-left: 20px;
+    color: white;
+    background-color: #121212;
+    height: 293px;
+    width: 193px;
+    text-overflow:ellipsis;
+}
+.card span,div{
+    font-size: 14px;
+    background-color: #121212;
+}
+.card img{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 7px;
+    height: 170px;
+    width: 170px;
+    background-size: cover;
+}
+.subhero1::-webkit-scrollbar{
+    display: none;
+}
+.subhero2{
+    overflow-x:auto ;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #121212;
+    height:250px;
+    width: 100%;
+}
+.subhero2::-webkit-scrollbar{
+    display: none;
+}
+.card2:hover .play{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+.card2{
+    position: relative;
+    margin-left: 20px;
+    height: 250px;
+    width: 195px;
+    background-color: #121212;
+}
+.card2 img{
+    background-size: cover;
+    height:170px;
+    width: 170px;
+    border-radius: 50%;
+}
+.card2 span{
+    color: White;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #121212;
+}
+.subhero3{
+    overflow-x:auto ;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #121212;
+    height:250px;
+    width: 100%;
+}
+.subhero3::-webkit-scrollbar{
+    display: none;
+}
+.seprator{
+    border-top: 1px solid #282828;
+    margin: 30px 30px;
+}
+.foot{
+    margin-left: 399px;
+    background-color: #121212;
+    height: 440px;
+    width: 1110px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+}
+.details{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 214px;
+    width: 944px;
+}
+.spotify-det{
+    height: 188px;
+    width: 182px;
+}
+.spotify-det ul{
+    color: #b3b3b3;
+    list-style: none;
+}
+.spotify-det ul li{
+    margin-top:10px ;
+}
+.main{
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+}
+.symbols{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 160px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    font-size: 18px;
+    border-radius: 50%;
+    color: white;
+}.seprator1{
+    border-top: 1px solid #282828;
+    margin: 30px 30px;
+}
+.subfoot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subfoot2{
+    margin-left:30px;
+}
+.copyright{
+    color:#b3b3b3;
+    display: flex;
+}
+.playbar {
+    display: none;
+    position: fixed;           /* Yeh usse viewport ke respect mein fix karega */
+    bottom: 0;                 /* Bottom se chipka dega */
+    left: 0;
+    right: 0;
+    height: 80px;              /* Spotify jaise height */
+    background-color: #181818; /* Same dark background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;             /* Taaki sabke upar rahe */
+    border-top: 1px solid #282828;
+}
+.playbar .left, .playbar .center, .playbar .right {
+  display: flex;
+  align-items: center;
+}
+
+.playbar .left {
+  flex: 1;
+}
+
+.playbar .center {
+  flex: 2;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playbar .right {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.playbar img {
+  height: 56px;
+  width: 56px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.song-info .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.song-info .artist {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.controls i {
+  font-size: 20px;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.play-btn {
+  font-size: 32px;
+}
+
+.seekbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+  width: 400px;
+}
+
+.seekbar input[type=range] {
+  flex: 1;
+}
+
